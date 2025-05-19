@@ -1,0 +1,7 @@
+customtkinter
+Pillow
+
+# ⚠️ Caution for Linux Users
+# On Linux, make sure the required Tkinter libraries are installed:
+# Run the following command before using the app:
+# sudo apt update && sudo apt install python3-tk
