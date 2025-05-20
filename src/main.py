@@ -10,8 +10,8 @@ current_player = 'X'
 vs_computer = False
 buttons = []
 
-x_img = ctk.CTkImage(Image.open("assets/glow_x.png"), size=(80, 80))
-o_img = ctk.CTkImage(Image.open("assets/glow_o.png"), size=(80, 80))
+x_img = ctk.CTkImage(Image.open("../assets/glow_x.png"), size=(80, 80))
+o_img = ctk.CTkImage(Image.open("../assets/glow_o.png"), size=(80, 80))
 
 def check_winner(brd):
     win_conditions = [
