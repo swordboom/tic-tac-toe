@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from tkinter import messagebox
 from PIL import Image
+from pathlib import Path
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
@@ -10,8 +11,12 @@ current_player = 'X'
 vs_computer = False
 buttons = []
 
-x_img = ctk.CTkImage(Image.open("../assets/glow_x.png"), size=(80, 80))
-o_img = ctk.CTkImage(Image.open("../assets/glow_o.png"), size=(80, 80))
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR.parent / "assets"
+
+x_img = ctk.CTkImage(Image.open(ASSETS_DIR / "glow_x.png"), size=(80, 80))
+o_img = ctk.CTkImage(Image.open(ASSETS_DIR / "glow_o.png"), size=(80, 80))
+
 
 def check_winner(brd):
     win_conditions = [
